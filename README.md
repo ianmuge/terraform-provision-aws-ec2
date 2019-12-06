@@ -1,5 +1,8 @@
+# Terraform Create AWS EC2 instances
+Terraform script to create AWS EC2 instances per availability zone
+ 
 # Deployment Instructions
-On CLI you can run the command as shown below substituting the user.pem for own aws generated pem and playbook with actual playbook name. Replace the variables in the command to suite your environment.
+Replace the variables in the command to suite your environment.
 ```
 terraform init
 terraform plan -var="vpc_id={{vpc-id}}" -var="key_name={{key-name}}"
@@ -10,7 +13,7 @@ You can modify these common variables (Others are available on the variables.tf 
 - vpc-id
 - key-name
 - zone
-- instance_count
+- instance_count (Per availability zone)
 - service
 - role
 - instance_type
