@@ -35,7 +35,6 @@ variable "disable_api_termination" {
 }
 variable "key_name" {
   description = "Key Name"
-  default     = "imuge"
 }
 variable "service" {
   description = "Service"
